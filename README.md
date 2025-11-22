@@ -29,3 +29,7 @@ Ao pressionar o botão, o ciclo de foco se inicia. Assim que o tempo acaba, seus
 https://691d0f6cd58e64bf0d34dfd3.mockapi.io/api/pontos
 
 O nosso ESP32 faz uma requisição GET para saber quantos pontos o usuário possui e depois soma mais 50 e faz uma requisição PUT para atualizar os dados, que são imediatamente recebidos pelo site da loja.
+
+## Código do ESP32:
+
+O código inteiro do firmware está no arquivo sketch.ino
