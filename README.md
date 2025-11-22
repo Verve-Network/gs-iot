@@ -14,16 +14,18 @@ https://gs-iot-three.vercel.app/
 
 ## Descrição do projeto:
 
-Muitas pessoas trabalham horas sem nenhum tipo de pausa, isso leva a fadiga e uma redução da performance daquele trabalhador. O pomodoro é uma ferramenta simples que determina o tempo para focar e outro para descansar. No projeto tem o intuito de gamificar essa experiencia, possibilitando o usuario de gastar os pontos adquiridos de cada tempo de foco concluido em pequenas recompensas. Dessa forma, o trabalhador continua engajado e focado no trabalho.
+A ausência de pausas durante o trabalho pode levar à fadiga e à redução da eficiência operacional. Este software implementa a técnica Pomodoro para estruturar intervalos de foco e descanso, mitigando esses efeitos. O diferencial da aplicação reside na camada de gamificação: o sistema converte ciclos de foco bem-sucedidos em pontos. O usuário pode utilizar essa pontuação para adquirir recompensas virtuais, promovendo um mecanismo de feedback positivo que estimula o engajamento contínuo.
 
 ## Instruções de uso:
-O usário pressiona o único botao do circuito. logo depois do tempo de foco há a soma de pontos e o tempo de pausa. O usuário poderá ver e gastar seus pontos na própria loja da Verve, resgatando suas recompensas, que são totalmente personalizaveis.
+
+Ao pressionar o botão, o ciclo de foco se inicia. Assim que o tempo acaba, seus pontos são somados e o tempo de pausa começa. Depois, é só acessar a loja da Verve para conferir seu saldo e resgatar recompensas criadas sob medida para você.
 
 ## Imagem do circuito:
 
 <img width="898" height="548" alt="image" src="https://github.com/user-attachments/assets/669195b4-8525-4de7-911d-08dccc8ab85f" />
 
-## Endpoint utilizado para as requisições http:
+## Requisições HTTP:
 
 https://691d0f6cd58e64bf0d34dfd3.mockapi.io/api/pontos
 
+O nosso ESP32 faz uma requisição GET para saber quantos pontos o usuário possui e depois soma mais 50 e faz uma requisição PUT para atualizar os dados, que são imediatamente recebidos pelo site da loja.
